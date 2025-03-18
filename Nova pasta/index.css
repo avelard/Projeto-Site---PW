@@ -47,19 +47,20 @@ main{
     padding: 10px;
 
 }
-.botao:hover {}
+.botao:hover{
 
-@media(max-width: 600px) {
-    .card {
+}
+
+@media(max-width: 600px){
+    .card{
         width: 95%;
     }
-
-    .botao {
+    .botao{
         background-color: green;
     }
 }
 
-.botao {
+.botao{
     color: #fff;
     background-color: red;
     border-radius: 8px;
@@ -69,6 +70,6 @@ main{
     margin: 10px;
     cursor: pointer;
     font-weight: bold;
-
+    
 
 }
