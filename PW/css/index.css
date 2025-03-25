@@ -1,7 +1,11 @@
+@import url('variable.css');
+
+
+
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
-    color: #fff;
+    background-color: var(--bg-color-body);
+    color: var(--font-color);
     margin: 0;
     padding: 0;
     text-align: center;
@@ -14,10 +18,10 @@ header{
 }
 main{
     max-width: 850px;
-    background-color: #2222;
+    background-color: var(--bg-color-conteiner);
     border-radius: 5px;
     margin: 20px auto;
-    box-shadow: 0 0 5px #222;
+    box-shadow: 0 0 5px var(--bg-color-conteiner);
     padding: 20px;
     
 }
