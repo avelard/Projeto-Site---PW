@@ -1,0 +1,107 @@
+@import url('variable.css');
+
+
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Times, serif;
+    background-color: var(--bg-color-body);
+    color: var(--font-color);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+
+
+header{
+    background-color: #111111;
+    padding: 1px;
+    /*align-items: center;*/
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.foto{
+    width: 600px; 
+    height: 600px;
+    border-radius: 2%; 
+}
+
+header .logo{
+    margin-left: 50px;
+}
+main{
+    max-width: 1200px;
+    background-color: var(--bg-color-conteiner);
+    border-radius: 5px;
+    margin: 20px auto;
+    box-shadow: 0 0 5px var(--bg-color-conteiner);
+    padding: 20px;
+    
+}
+.negrito{
+    font-weight: bold;
+}
+.cards{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+.card img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+main > div {
+    gap: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+main > div p, main > div h2 {
+    text-align: left;
+    line-height: 1.6;
+    font-size: 1.2em;
+    margin: 20px;
+}
+
+
+
+.card{
+    background-color: #414141;
+    width: 250px;
+    box-shadow: 0 1px 10px #414141;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 10px;
+
+}
+
+.botao {
+    color: #fff;
+    background-color: red;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1em;
+    border-color: red;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: bold;
+
+
+}
+
+@media(max-width: 600px) {
+    .card {
+        width: 50%;
+    }
+    
+
+    
+
+}
