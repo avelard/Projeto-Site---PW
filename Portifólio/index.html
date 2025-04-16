@@ -6,61 +6,73 @@
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <title>Portifólio Danilo Avelar</title>
         <link rel="stylesheet" href="css/index.css"> 
-        
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/variable.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/new-styles.css"><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     </head>
 
     <body data-theme = "dark">
         <header>
-            <h1>
-                <img class="logo" src="images/logo.png" 
-                alt="logo avelar.d"
-                width="170px" 
-                height="60px" >
-                
-            </h1>
+            <div class="interface">
+                <div clas="logo">
+                    <a href="index.html" title="Voltar para a página inicial">
+                        <img class="logo" src="images/logo.svg" 
+                            alt="logo avelar.d"
+                            width="280px" 
+                            height="100px" >
+                    </a>
+                </div>
+                <div class="btn-alterar-tema">
+                    <button id="alterarTema" class="btn-alterartema" title="Alterar Tema" onClick="alterarTema()">
+                        🌙
+                    </button>
+
+                </div>
+            </div>
+           
             
         </header>
         <main>
-            <div>
-            <img class = "foto" src="images/d. avelar.jpg" alt="foto danilo" >
-                <div>
-                <p><span class="negrito">Quem sou</span></p>
-                <h2> Danilo Avelar </h2>
-                <p>Olá sou o Danilo, estou no meio da jornada de ser um engenheiro de software, sou apaixonado por tecnologia desde sempre.
-                    A programação é meu alvo e estou sempre tentando melhorar minhas habilidades, seja com linguagens como 
-                    [Python, Java, JavaScript] ou com frameworks e ferramentas que fazem o código rodar de forma suave e eficiente. 
-                    Além disso, gosto de trabalhar em equipe, e adoro compartilhar ideias para encontrar soluções criativas e eficazes. 
-                    A cada projeto, estou sempre buscando evoluir e crescer profissionalmente.</p>
-                    
-                <p>Siga com meu portfólio e veja o que estou criando por aqui. Se gostar, entre em contato!</p>
-
-                <button class=botao>Insta</button>
-                <button class=botao>zap</button>
-                <button class=botao>git</button>
-                <button id="btAlterarTema" onclick="alterarTema()" class=botao>Alterar Tema</button>
-                <button onclick="buscarInscritos()" class = botao>Buscar Inscritos</button>
-            </div>
-        </div>
-        
-            <div class = "cards">
-                <div class = "card">
-                    <img src="images/palestra1.jpg" alt="banner palestra 1" width="250px" height="180px">
-                    <p><span class="negrito"> aaaaaaaaaaaaaas </span></p>
-                    <p>Os asdasdada .</p>
+            <section class="apresentacao">
+                <div class="interface">
+                    <div class="flex">
+                        <div class="apresentacao-texto">
+                            <h1>Olá, sou o <span>Danilo Avelar</span></h1>
+                            <p>Sou estudante de Engenharia de Software, apaixonado por tecnologia e programação.
+                                Tenho experiência com Python, Java, JavaScript e ferramentas que otimizam performance.
+                                Gosto de trabalhar em equipe e buscar soluções criativas para desafios técnicos.
+                                Estou sempre evoluindo com cada projeto e aberto a novas conexões. 
+                            </p>
+                            <div class="redes-sociais">
+                                <div class="icones">
+                                    <a href="https://www.linkedin.com/in/danilo-avelar/" target="_blank" title="LinkedIn">
+                                        <i class="fab fa-linkedin fa-2x"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/DaaniloAvelar" target="_blank" title="Facebook">
+                                        <i class="fab fa-facebook fa-2x"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/daniloaveelar" target="_blank" title="Instagram">
+                                        <i class="fab fa-instagram fa-2x"></i>
+                                    </a>
+                                    <a href="https://wa.me/+5544999467904" target="_blank" title="WhatsApp">
+                                        <i class="fab fa-whatsapp fa-2x"></i>
+                                    </a>
+                                    <a href="https://github.com/avelard" target="_blank" title="GitHub">
+                                        <i class="fab fa-github fa-2x"></i>
+                                    </a>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="apresentacao-imagem">
+                            <img src="images/d. avelar.jpg" alt="foto danilo" width="200px" height="200px">
+                        </div>
+                    </div>
                 </div>
-                <div class = "card">
-                    <img src="images/palestra2.jpg" alt="banner palestra 2"  width="250px" height="180px">
-                    <p><span class="negrito"> ggggggggggggggg </span></p>
-                    <p>Cogggggggggs.</p>
-                </div>
-                <div class = "card">
-                    <img src="images/palestra3.png" alt="banner palestra 3"width="250px" height="180px">
-                    <p><span class="negrito"> oooooo </span></p>
-                    <p>oooooooooooo.</p>
-                </div>
-                <div id = "inscritos" >
-                </div>    
-            </div>
+            </section>
+                   
         </main>
         <script src="js/index.js">
          
