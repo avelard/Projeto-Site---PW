@@ -8,16 +8,18 @@
 }
 
 [data-theme="light"] {
-    --bg-color-body: #dddddd;
+    --bg-color-body: #ffffff;
     --font-color: #000000;
-    --btn-data-theme-color: #007bff;
-    --btn-data-theme-color-hover: #0056b3;
+    --font-color-menu: rgba(0, 0, 0, 0.493);
+    --font-color-menu-hover: #000000;
+
 }
 
 
 [data-theme="dark"] {
     --bg-color-body: #000000;
     --font-color: #ffffff;
-    --btn-data-theme-color: #ffcc00;
-    --btn-data-themecolor-hover: #ff9900;
+    --font-color-menu: rgba(255, 255, 255, 0.493);
+    --font-color-menu-hover: #ffffff;
+    
 }
