@@ -1,0 +1,88 @@
+@import url('variable.css');
+@import url('index.css');
+
+header{
+    background-color: var(--bg-color);
+    padding: 10px 4%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.interface{
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--font-color);
+}
+
+header a{
+    text-decoration: none;
+    color: var(--font-color-menu);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.1s ease-in-out;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header a:hover{
+    color: var(--font-color-menu-hover);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+    
+}
+
+.btn-alterar-tema button{
+    background: none;
+    font-size: 30px;
+    cursor: pointer ;
+    border:none;
+    box-shadow: none;
+
+} 
+.btn-alterar-tema button:hover{
+    scale: 1.05;
+    transition: 0,8s;
+    transform: 1,05;
+    
+}
+
+
+header > .interface{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+

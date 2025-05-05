@@ -1,0 +1,458 @@
+@import url('variable.css');
+@import url('header.css');
+
+
+
+body{
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background-color: var(--bg-color-body);
+    color: var(--font-color);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    scrollbar-color: var(--btn-color) var(--bg-color-body); 
+    
+    
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.flex{
+    display: flex;
+}
+
+section.apresentacao{
+    padding: 40px 4%;
+    text-align: left;
+    margin: 30px 40px;
+
+}
+
+section.apresentacao .flex{
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+.apresentacao .apresentacao-texto h1{
+    font-size: 42px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.apresentacao .apresentacao-texto h1 span{
+    color: var(--btn-color);
+    font-size: 45px;
+    font-weight: bold;
+    
+}
+
+.apresentacao .apresentacao-texto p{ 
+    font-size: 20px;
+    margin: 40px 0;
+    
+}
+
+.apresentacao .apresentacao-imagem img{
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 15px var(--btn-color);
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+.botoes-contato{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+
+.contato{
+    background-color: var(--btn-color);
+    color: var(--bg-color-body);
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+
+}
+
+.contato:hover{
+    background-color: var(--btn-color-hover);
+    color: var(--font-color);
+    box-shadow: 0px 0px 5px var(--btn-color-hover);
+    
+}
+
+.redes-sociais {
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+
+.icones {
+    background-color: var(--btn-color);
+    color: var(--bg-color-body);
+    border: none;
+    height: auto;
+    cursor: pointer;
+    border-radius: 7px;
+    padding: 7px 10px;
+    text-decoration: none;
+    gap: 5px;
+    
+    
+}
+.icones :hover{
+    background-color: var(--btn-color-hover);
+    color: var(--font-color);
+    box-shadow: 0px 0px 5px var(--btn-color-hover);
+
+}
+
+#habilidades {
+    padding: 40px 60px;
+    background-color: var(--bg-color-conteiner);
+  }
+  
+#habilidades .hab-layout #hab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 30px;
+}
+  
+#habilidades .hab-layout #hab #hab-text h1 {
+    color: var(--font-color);
+    font-size: 3rem;
+    text-align: left;
+    font-weight: bold;
+    max-width: 400px;
+    max-height: 40px;
+    margin-bottom: 20px;
+}
+  
+#habilidades .hab-layout #hab #hab-text h1 span {
+    color: var(--btn-color);
+}
+  
+#habilidades .hab-layout #hab #hab-text .changeDescription {
+    transition: 0.2s all ease;
+    font-size: 16px; 
+    line-height: 1.4; 
+    color: var(--font-color); 
+    overflow: hidden; 
+    text-align: justify; 
+    max-height: 400px; 
+    max-width: 500px; 
+
+}
+  
+#habilidades .hab-layout #hab #hab-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+  
+#habilidades .hab-layout #hab #hab-buttons article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100px;
+    background-color: var(--bg-color-body);
+    border: 1px solid var(--btn-color);
+    border-radius: 4px;
+    transition: 0.2s all ease;
+}
+  
+#habilidades .hab-layout #hab #hab-buttons article:hover {
+    border: 3px solid var(--btn-color);
+}
+
+#projetos .contrucao {
+    text-align: start;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#projetos .contrucao #proj {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 300px;
+    padding: 0px 40px;
+}
+
+#projetos .contrucao #proj #proj-text h1 {
+    color: var(--font-color);
+    font-size: 3rem;
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+
+#projetos .contrucao #proj #proj-text .linha1 {
+    font-size: 16px; 
+    line-height: 1.4; 
+    color: var(--font-color); 
+    text-align: justify; 
+    max-height: 400px; 
+    max-width: 500px;
+    overflow: hidden; 
+    white-space: nowrap;
+    margin: 0;
+    animation: digitar 2s steps(40, end) forwards ; 
+}
+
+.hidden .linha1, .hidden .linha2{
+    animation: none;
+    opacity: 0;
+}
+
+.visible .linha1 {
+    animation: digitar 2s steps(40, end) forwards; 
+    animation-delay: 2s;
+    opacity: 1;
+}
+
+.visible .linha2 {
+    animation: digitar 2s steps(40, end) forwards; 
+    animation-delay: 2s;
+    opacity: 1;
+}
+
+#projetos .contrucao #proj #proj-text .linha2 {
+    font-size: 16px; 
+    line-height: 1.4; 
+    color: var(--font-color); 
+    text-align: justify; 
+    max-width: 500px;
+    margin: 0;
+    overflow: hidden; 
+    white-space: nowrap;
+    animation: digitar 2s steps(40, end) forwards; 
+    animation-delay: 2s;
+}
+
+
+#projetos .contrucao #proj .link-git {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+
+
+#projetos .contrucao #proj .link-git a {
+    color: var(--btn-color);
+    border-color: var(--btn-color);
+    cursor: pointer;
+    border-radius: 50%;
+    text-decoration: none;
+    position: relative;
+    animation: pular 2s ease-in-out infinite alternate;
+}
+
+.footer{
+    display: flex;
+    padding: 10px 4%;
+    box-shadow: 0px 0px 5px var(--btn-color);
+    background-color: var(--bg-color-body);
+    color: var(--font-color);
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 150px;
+}
+
+.footer .footer-text{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--font-color);
+    margin: 0;
+}
+
+.footer .footer-text a{
+    color: var(--btn-color);
+    text-decoration: none;
+    margin-top: 7px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    transition: digitar all 0.1s ease-in-out;
+}
+
+.footer .footer-redes .redes-sociais .icones a {
+    color: var(--btn-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 100%;
+    display: inline-block;
+    transition: digitar all 0.1s ease-in-out;
+}
+
+
+.footer .footer-redes .redes-sociais .icones a:hover {
+    color: var(--btn-color-hover);
+}
+
+.footer .footer-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  #habilidades .hab-layout #hab #hab-buttons article {
+      width: 100%;
+  }
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--btn-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--btn-color-hover);
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    .menu, .menu-lista {
+        display: none;
+    }
+
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #habilidades .hab-layout #hab {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    #habilidades .hab-layout #hab #hab-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 100px;
+
+    }
+
+    #habilidades .hab-layout #hab #hab-buttons article {
+        width: 45%; 
+    
+    }
+
+    #habilidades .hab-layout #hab #hab-text {
+        max-width: 100%;
+        margin-left: 20px;
+    }
+
+    #projetos .contrucao {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    #projetos .contrucao #proj {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #projetos .contrucao #proj #proj-text {
+        max-width: 100%;
+    }
+
+    
+    
+    
+}
+
+@keyframes digitar {
+    from {
+        width: 0; 
+    }
+    to {
+        width: 100%; 
+    }
+}
+
+
+@keyframes pular {
+    0%{
+        top:-10px;
+        transform: rotate(10deg);
+    }
+    50%{
+        top: -20px;
+        
+    }
+    100%{
+        top: -10px;  
+        transform: rotate(-10deg);
+    }
+}
+
+
+
+@keyframes flutuar{
+    0%{
+        top:0;
+        
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(-10px);
+    }
+    100%{
+        top:30px;
+        transform: translateX(0px);
+    }
+}
+
+
+
